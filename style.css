@@ -135,6 +135,8 @@ nav {
     width: 100vw;
     justify-content: flex-end;
     align-self: center;
+
+    z-index: 20;
 }
 
 nav ul {

@@ -8,7 +8,6 @@ const width = document.documentElement.clientWidth;
 
 window.onscroll = function() { 
     if (width > 420) {
-        console.log("im fckin stupid");
             if (document.documentElement.scrollTop > 320) {
                 mainTitle.classList.remove("fixed");
                 mainTitle.style.marginTop = "320px";
@@ -16,3 +15,12 @@ window.onscroll = function() {
             }
     }
 }
+
+
+const navLinks = document.querySelectorAll("nav ul a");
+
+navLinks.forEach(link => link.addEventListener("click", () => {
+    mainTitle.classList.remove("fixed");
+    mainTitle.style.marginTop = "320px";
+    aboutText.classList.remove("hidden");
+}))
