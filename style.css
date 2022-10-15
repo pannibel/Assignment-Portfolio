@@ -1,3 +1,6 @@
+/*? GENERAL */
+
+@import url("https://use.typekit.net/xay8pxg.css");
 
 * {
     margin: 0;
@@ -5,6 +8,76 @@
 }
 
 
+:root {
+    /*fonts */
+    --font-primary: ;
+    --font-secondary: "coolvetica", sans-serif;;
+
+    /*font sizes */
+    --font-xxsmall: 0.8rem;
+    --font-xsmall: 1rem;
+    --font-small: 1.25rem;
+    --font-medium: 1.563rem;
+    --font-large: 1.953rem;
+    --font-xlarge: 2.441rem;
+    --font-xxlarge: 3.052rem;
+
+    /*colors*/
+    --color-white: #F5F5F5;
+    --color-green: #57935A;
+    --color-black: #1F1F1A;
+
+    /*sizes*/
+    --size-xxsmall: 0.25rem;
+    --size-xsmall: 0.5rem;
+    --size-small: 1rem;
+    --size-medium: 2rem;
+    --size-large: 4rem;
+    --size-xlarge: 6rem;
+    --size-xxlarge: 8rem;
+  }
+  
+h1 {
+    font-family: var(--font-primary);
+    color: var(--color-white);
+    line-height: ;
+}
+  
+p {
+    font-family: var(--font-secondary);
+    color: var(--color-white);
+}
+  
+a {
+    font-family: var(--font-secondary);
+    color: var(--color-white);
+    text-decoration: none;
+}
+  
+ul {
+    font-family: var(--font-secondary);
+    color: var(--color-white);
+    font-size: var(--font-small);
+    font-weight: 400;
+
+    list-style: none;
+}
+  
+button {
+}
+  
+button:hover {
+    cursor: pointer;
+}
+
+
+
+/*? BODY */
+
+#background_image {
+    display: block;
+    top: -10rem;
+}
 
 .bgd_img {
     display: block;
@@ -15,4 +88,40 @@
 
 #bgd_1 {
     transform: scaleY(-1);
+}
+
+
+
+
+/*? MAIN */
+
+main {
+    position: absolute;
+    width: 100vw;
+}
+
+
+
+
+
+/*? NAV */
+
+nav {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    width: 100vw;
+    justify-content: flex-end;
+    align-self: center;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    gap: var(--size-medium);
+    padding: var(--size-medium);
 }
