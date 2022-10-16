@@ -1,7 +1,5 @@
 "use strict"
 
-import {inView, animate} from "https://cdn.skypack.dev/motion";
-
 const mainTitle = document.querySelector("#main_title h1");
 const aboutText = document.querySelector("#about");
 const assignments = document.querySelector("#assignments");

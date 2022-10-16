@@ -41,6 +41,7 @@
   }
 
 body {
+    position: absolute;
     overflow-x: hidden;
 }
   
@@ -271,7 +272,13 @@ nav ul {
     padding-top: var(--size-medium);
 }
 
+/*? FOOTER */
 
+footer {
+    position: absolute;
+    bottom: 1vh;
+    left: 1vw;
+}
 
 
 /*? PAGES */
