@@ -4,14 +4,16 @@
 
 const mainTitle = document.querySelector("#main_title h1");
 const aboutText = document.querySelector("#about");
+const assignments = document.querySelector("#assignments");
 const width = document.documentElement.clientWidth;
 
 window.onscroll = function() { 
     if (width > 420) {
-            if (document.documentElement.scrollTop > 320) {
+            if (document.documentElement.scrollTop > 222) {
                 mainTitle.classList.remove("fixed");
                 mainTitle.style.marginTop = "320px";
                 aboutText.classList.remove("hidden");
+                assignments.classList.remove("hidden");
             }
     }
 }
