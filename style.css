@@ -10,7 +10,7 @@
 
 :root {
     /*fonts */
-    --font-primary: "coolvetica", sans-serif;
+    --font-primary: "blenny", sans-serif;
     --font-secondary: "coolvetica", sans-serif;
 
     /*font sizes */
@@ -21,6 +21,7 @@
     --font-large: 1.953rem;
     --font-xlarge: 2.441rem;
     --font-xxlarge: 3.052rem;
+    --font-xxxlarge: 5rem;
 
     /*colors*/
     --color-white: #F5F5F5;
@@ -44,10 +45,16 @@ body {
   
 h1 {
     font-family: var(--font-primary);
-    font-size:5rem;
+    font-size: var(--font-xxxlarge);
     color: var(--color-white);
     text-transform: uppercase;
-    line-height: ;
+}
+
+h3 {
+    font-family: var(--font-secondary);
+    font-size: var(--font-large);
+    color: var(--color-white);
+    text-transform: uppercase;
 }
   
 p {
@@ -63,6 +70,7 @@ a {
 
 a:hover {
     cursor: pointer;
+    color: var(--color-green);
 }
   
 ul {
@@ -113,11 +121,12 @@ main {
 }
 
 #main_grid {
-    position: relative;
+    position: absolute;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 
+    top: 100vh;
     width: 100vw;
     justify-content: center;
 }
@@ -158,7 +167,7 @@ nav ul {
     display: flex;
     width: 100vw;
     justify-content: center;
-    margin-top: 15rem;
+    margin-top: 40vh;
 }
 
 #main_title h1 {
@@ -168,7 +177,7 @@ nav ul {
 #about {
     padding-left: 20%;
     padding-right: 20%;
-    padding-top: 6rem;
+    padding-top: var(--size-medium);
 }
 
 
@@ -196,8 +205,8 @@ nav ul {
   
     align-items: center;
     justify-content: center;
-    min-height: 20rem;
-    width: 20rem;
+    min-height: 15rem;
+    width: 15rem;
     padding: var(--size-medium);
     margin: var(--size-medium);
 
@@ -207,6 +216,8 @@ nav ul {
 
 .card:hover {
     box-shadow: var(--shadow);
+    background-color: var(--color-black);
+
     cursor: pointer;
 }
 
@@ -233,42 +244,137 @@ nav ul {
 }
 
 
+/*? CONCLUSION */
+
+#conclusion_title {
+    position: relative;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    padding-top: 15vh;
+
+    mix-blend-mode: difference;
+}
+
+#conclusion {
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: var(--size-medium);
+}
+
+
+
+/*! keyframes */
+
+.fadein_anim {
+    visibility: visible;
+    animation-name: fadein;
+    animation-delay: 0.2s;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(0.17, 0.55, 0.55, 1);
+}
+
+@keyframes fadein {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
 
 
 /*! responsive */
 
 @media only screen and (max-width: 1200px) {
 
+    #main_grid {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    
+        top: 70vh;
+        width: 100vw;
+        justify-content: center;
+    }
+
 #main_title {
     margin-top: 12rem;
 }  
 
-#main_title h1 {
+h1 {
     font-size: var(--font-xxlarge);
 }
 
 #about {
     padding-left: 15%;
     padding-right: 15%;
-    padding-top: 4rem;
+    padding-top: 15vh;
 }
+
+/*? ASSIGNMENTS SECTION */
+
+#assignments {
+    display: flex;
+    justify-content: center;
+}
+
+#cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--size-xxsmall);
+    margin-top: var(--size-medium);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: var(--font-small);
+  
+    align-items: center;
+    justify-content: center;
+    min-height: 10rem;
+    width: 12rem;
+    padding: var(--size-small);
+    margin: var(--size-small);
+
+    background-color: var(--color-black);
+    border-radius: 1rem;
+}
+
+.card h3 {
+    font-size: var(--font-medium);
+    padding-bottom: var(--size-xsmall);
+}
+
 }
 
 
 @media only screen and (max-width: 1000px) {
 
+    #main_grid {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    
+        top: 60vh;
+        width: 100vw;
+        justify-content: center;
+    }
+
     #main_title {
         margin-top: 8rem;
     }  
     
-    #main_title h1 {
+h1 {
         font-size: var(--font-xxlarge);
     }
     
     #about {
         padding-left: 15%;
         padding-right: 15%;
-        padding-top: 4rem;
+        padding-top: 15vh;
     }
 }
 
@@ -282,25 +388,100 @@ nav ul {
         float: left;
     }
 
+    #main_grid {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    
+        top: 60vh;
+        width: 100vw;
+        justify-content: center;
+    }
+
 #main_title {
-    margin-top: 6rem;
+    margin-top: 8rem;
 }  
 
-#main_title h1 {
-    font-size: var(--font-xxlarge);
+h1 {
+    font-size: var(--font-xlarge);
+}
+
+p {
+    font-size: var(--font-xxsmall);
 }
 
 #about {
     padding-left: 15%;
     padding-right: 15%;
-    padding-top: 2rem;
+    padding-top: 10vh;
 
     font-size: var(--font-xxsmall);
 }
+
+
+    /*? ASSIGNMENTS SECTION */
+
+    #assignments {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    #cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: var(--size-xxsmall);
+        margin-top: var(--size-large);
+
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    
+    .card {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: var(--font-small);
+      
+        align-items: center;
+        justify-content: center;
+        height: 10%;
+        width: 100%;
+        padding: var(--size-small);
+        margin: var(--size-small);
+        padding-top: 0;
+        padding-bottom: 0;
+    
+        background-color: var(--color-black);
+        border-radius: 1rem;
+    }
+    
+    .image_container {
+        height: 50%;
+        width: 100%;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .card h3 {
+        font-size: var(--font-small);
+    }
+    
+    .card p {
+        font-size: var(--font-xxsmall);
+    }
+
+
+#conclusion_title {
+    padding-top: 5vh;
+}
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
 
     .bgd_img {
         position: relative;
@@ -324,24 +505,81 @@ nav ul {
     }
 
     #main_title {
-        margin-top: 4rem;
+        margin-top: 8vh;
     }  
     
-    #main_title h1 {
+h1 {
         font-size: var(--font-xlarge);
     }
     
     #about {
         padding-left: 15%;
         padding-right: 15%;
-        padding-top: 2rem;
+        padding-top: 0vh;
+    }
+
+       /*? ASSIGNMENTS SECTION */
+
+    #assignments {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
     
+    #cards {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: var(--size-xxsmall);
+        margin-top: var(--size-large);
+
+        margin-left: 10%;
+        margin-right: 20%;
+    }
+    
+    .card {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: var(--font-small);
+      
+        align-items: center;
+        justify-content: center;
+        height: 10%;
+        width: 100%;
+        padding: var(--size-small);
+        margin: var(--size-small);
+        padding-top: 0;
+        padding-bottom: 0;
+    
+        background-color: var(--color-black);
+        border-radius: 1rem;
+    }
+    
+    .image_container {
+        display: none;
+        width: 100%;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .card h3 {
+        font-size: var(--font-small);
+    }
+    
+    .card p {
         font-size: var(--font-xxsmall);
     }
+
+
+#conclusion_title {
+    padding-top: 5vh;
+}
     }
 
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 550px) {
 
         .bgd_img {
             position: relative;
@@ -365,25 +603,31 @@ nav ul {
         }
     
         #main_title {
-            margin-top: 5rem;
+            margin-top: 7vh;
         }  
         
-        #main_title h1 {
-            font-size: var(--font-large);
+h1 {
+            font-size: var(--font-medium);
         }
         
         #about {
             padding-left: 15%;
             padding-right: 15%;
-            padding-top: 2rem;
+            padding-top: 0%;
         
             font-size: var(--font-xxsmall);
         }
+
+
+    #conclusion {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
         }
 
 
 
-        @media only screen and (max-width: 420px) {
+@media only screen and (max-width: 420px) {
 
             .bgd_img {
                 position: relative;
@@ -392,6 +636,17 @@ nav ul {
                 height: auto;
                 float: left;
                 left: -50%;
+            }
+
+            #main_grid {
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+            
+                top: 60vh;
+                width: 100vw;
+                justify-content: center;
             }
         
             nav ul {
@@ -408,27 +663,90 @@ nav ul {
             }
         
             #main_title {
-                margin-top: 25rem;
+                margin-top: 5vh;
             }  
             
-            #main_title h1 {
+h1 {
                 font-size: var(--font-medium);
                 position: relative;
             }
             
             #about {
-                padding-left: 15%;
-                padding-right: 15%;
-                padding-top: 2rem;
+                padding-left: 5%;
+                padding-right: 5%;
+                padding-top: 0;
             
                 font-size: var(--font-xxsmall);
                 visibility: visible;
             }
+
+                  /*? ASSIGNMENTS SECTION */
+
+    #assignments {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    #cards {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: var(--size-xxsmall);
+        margin-top: var(--size-small);
+
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+    .card {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: var(--font-small);
+      
+        align-items: center;
+        justify-content: center;
+        height: 10%;
+        width: 100%;
+        padding: var(--size-small);
+        margin: var(--size-small);
+        padding-top: 0;
+        padding-bottom: 0;
+    
+        background-color: var(--color-black);
+        border-radius: 1rem;
+    }
+    
+    .image_container {
+        display: none;
+        width: 100%;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .card h3 {
+        font-size: var(--font-small);
+    }
+    
+    .card p {
+        font-size: var(--font-xxsmall);
+    }
+
+
+    #conclusion_title {
+        padding-top: 2vh;
+    }
+
+    #conclusion {
+        padding: 5%;
+    }
             }
 
 
 
-            @media only screen and (max-width: 389px) {
+@media only screen and (max-width: 389px) {
 
                 .bgd_img {
                     position: relative;
@@ -437,6 +755,17 @@ nav ul {
                     height: auto;
                     float: left;
                     left: -50%;
+                }
+
+                #main_grid {
+                    position: absolute;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                
+                    top: 60vh;
+                    width: 100vw;
+                    justify-content: center;
                 }
             
                 nav ul {
@@ -453,18 +782,18 @@ nav ul {
                 }
             
                 #main_title {
-                    margin-top: 20rem;
+                    margin-top: 7rem;
                 }  
                 
-                #main_title h1 {
+h1 {
                     font-size: var(--font-medium);
                     position: relative;
                 }
                 
                 #about {
-                    padding-left: 15%;
-                    padding-right: 15%;
-                    padding-top: 2rem;
+                    padding-left: 5%;
+                    padding-right: 5%;
+                    padding-top: 4rem;
                 
                     font-size: var(--font-xxsmall);
                     visibility: visible;

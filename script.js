@@ -1,19 +1,18 @@
 "use strict"
 
-
+import {inView, animate} from "https://cdn.skypack.dev/motion";
 
 const mainTitle = document.querySelector("#main_title h1");
 const aboutText = document.querySelector("#about");
 const assignments = document.querySelector("#assignments");
 const width = document.documentElement.clientWidth;
 
-window.onscroll = function() { 
+window.onscroll = function() {
+
     if (width > 420) {
-            if (document.documentElement.scrollTop > 222) {
+            if (document.documentElement.scrollTop > 230) {
                 mainTitle.classList.remove("fixed");
-                mainTitle.style.marginTop = "320px";
-                aboutText.classList.remove("hidden");
-                assignments.classList.remove("hidden");
+                mainTitle.style.marginTop = "40vh";
             }
     }
 }
@@ -26,3 +25,10 @@ navLinks.forEach(link => link.addEventListener("click", () => {
     mainTitle.style.marginTop = "320px";
     aboutText.classList.remove("hidden");
 }))
+
+
+/* const firstLink = document.querySelector("#firstlink");
+const secondLink = document.querySelector("#secondlink");
+const thirdLink = document.querySelector("#thirdlink");
+
+firstLink.addEventListener("click", aboutText.scrollIntoView()); */
