@@ -10,19 +10,19 @@ const width = document.documentElement.clientWidth;
 window.onscroll = function() {
 
     if (width > 1152) {
-            if (document.documentElement.scrollTop > 400) {
+            if (document.documentElement.scrollTop > 380) {
                 mainTitle.textContent = "ABOUT ME";
             };
             if (document.documentElement.scrollTop > 1000) {
                 mainTitle.textContent = "PROJECTS";
             };
-            if (document.documentElement.scrollTop > 1800) {
+            if (document.documentElement.scrollTop > 1700) {
                 mainTitle.textContent = "CONTACT";
             };
             if (document.documentElement.scrollTop > 2500) {
                 mainTitle.textContent = "HIRE ME PLS";
             };
-            if (document.documentElement.scrollTop < 400) {
+            if (document.documentElement.scrollTop < 380) {
                 mainTitle.textContent = "PANNIBEL";
             };
     }
@@ -30,23 +30,167 @@ window.onscroll = function() {
 
 
     if (width < 1152) {
-        if (document.documentElement.scrollTop > 500) {
+        if (document.documentElement.scrollTop > 360) {
+            mainTitle.textContent = "ABOUT ME";
+        };
+        if (document.documentElement.scrollTop > 1000) {
+            mainTitle.textContent = "PROJECTS";
+        };
+        if (document.documentElement.scrollTop > 1600) {
+            mainTitle.textContent = "CONTACT";
+        };
+        if (document.documentElement.scrollTop < 360) {
+            mainTitle.textContent = "PANNIBEL";
+        };
+}
+
+
+    if (width < 1050) {
+        if (document.documentElement.scrollTop > 340) {
+            mainTitle.textContent = "ABOUT ME";
+        };
+        if (document.documentElement.scrollTop > 900) {
+            mainTitle.textContent = "PROJECTS";
+        };
+        if (document.documentElement.scrollTop > 1500) {
+            mainTitle.textContent = "CONTACT";
+        };
+        if (document.documentElement.scrollTop < 360) {
+            mainTitle.textContent = "PANNIBEL";
+        };
+}
+
+
+    if (width < 875) {
+        if (document.documentElement.scrollTop > 300) {
+            mainTitle.textContent = "ABOUT ME";
+        };
+        if (document.documentElement.scrollTop > 800) {
+            mainTitle.textContent = "PROJECTS";
+        };
+        if (document.documentElement.scrollTop > 1500) {
+            mainTitle.textContent = "CONTACT";
+        };
+        if (document.documentElement.scrollTop < 300) {
+            mainTitle.textContent = "PANNIBEL";
+        };
+}
+
+
+    if (width < 840) {
+        if (document.documentElement.scrollTop > 300) {
+            mainTitle.textContent = "ABOUT ME";
+        };
+        if (document.documentElement.scrollTop > 850) {
+            mainTitle.textContent = "PROJECTS";
+        };
+        if (document.documentElement.scrollTop > 1500) {
+            mainTitle.textContent = "CONTACT";
+        };
+        if (document.documentElement.scrollTop < 300) {
+            mainTitle.textContent = "PANNIBEL";
+        };
+}
+
+
+    if (width < 690) {
+        if (document.documentElement.scrollTop > 300) {
+            mainTitle.textContent = "ABOUT ME";
+        };
+        if (document.documentElement.scrollTop > 1000) {
+            mainTitle.textContent = "PROJECTS";
+        };
+        if (document.documentElement.scrollTop > 1600) {
+            mainTitle.textContent = "CONTACT";
+        };
+        if (document.documentElement.scrollTop < 300) {
+            mainTitle.textContent = "PANNIBEL";
+        };
+}
+
+
+    if (width < 615) {
+        if (document.documentElement.scrollTop > 400) {
+            mainTitle.textContent = "ABOUT ME";
+        };
+        if (document.documentElement.scrollTop > 1250) {
+            mainTitle.textContent = "PROJECTS";
+        };
+        if (document.documentElement.scrollTop > 1750) {
+            mainTitle.textContent = "CONTACT";
+        };
+        if (document.documentElement.scrollTop < 400) {
+            mainTitle.textContent = "PANNIBEL";
+        };
+}
+
+
+    if (width < 530) {
+        if (document.documentElement.scrollTop > 400) {
             mainTitle.textContent = "ABOUT ME";
         };
         if (document.documentElement.scrollTop > 1100) {
             mainTitle.textContent = "PROJECTS";
         };
-        if (document.documentElement.scrollTop > 1700) {
+        if (document.documentElement.scrollTop > 1600) {
             mainTitle.textContent = "CONTACT";
         };
-        if (document.documentElement.scrollTop > 2200) {
-            mainTitle.textContent = "HIRE ME PLS";
+        if (document.documentElement.scrollTop < 400) {
+            mainTitle.textContent = "PANNIBEL";
         };
-        if (document.documentElement.scrollTop < 500) {
+}
+
+    if (width < 475) {
+        if (document.documentElement.scrollTop > 400) {
+            mainTitle.textContent = "ABOUT ME";
+        };
+        if (document.documentElement.scrollTop > 1300) {
+            mainTitle.textContent = "PROJECTS";
+        };
+        if (document.documentElement.scrollTop > 1900) {
+            mainTitle.textContent = "CONTACT";
+        };
+        if (document.documentElement.scrollTop < 400) {
+            mainTitle.textContent = "PANNIBEL";
+        };
+}
+
+    if (width < 415) {
+        if (document.documentElement.scrollTop > 400) {
+            mainTitle.textContent = "ABOUT ME";
+        };
+        if (document.documentElement.scrollTop > 1500) {
+            mainTitle.textContent = "PROJECTS";
+        };
+        if (document.documentElement.scrollTop > 2200) {
+            mainTitle.textContent = "CONTACT";
+        };
+        if (document.documentElement.scrollTop < 400) {
+            mainTitle.textContent = "PANNIBEL";
+        };
+}
+
+    if (width < 380) {
+        if (document.documentElement.scrollTop > 400) {
+            mainTitle.textContent = "ABOUT ME";
+        };
+        if (document.documentElement.scrollTop > 1400) {
+            mainTitle.textContent = "PROJECTS";
+        };
+        if (document.documentElement.scrollTop > 2000) {
+            mainTitle.textContent = "CONTACT";
+        };
+        if (document.documentElement.scrollTop < 400) {
             mainTitle.textContent = "PANNIBEL";
         };
 }
 }
+
+
+
+
+
+
 /* const navLinks = document.querySelectorAll("nav ul a");
 
 navLinks.forEach(link => link.addEventListener("click", () => {
