@@ -26,7 +26,7 @@
         </header>
 
         <section id="main_title" class="">
-            <h1 class="fixed" id="main_title_h1">PANNIBEL</h1>
+            <h1 class="fixed" id="main_title_h1">PANNI BELEVSKI</h1>
         </section>
 
 
@@ -34,11 +34,11 @@
 
         <section id="about" class="">
             <p>Hey,<br>
-            I'm Panni, Copenhagen-based multimedia design student, graphic designer, photographer and video creator.<br>
-            My studies mainly focus on frontend development at the moment, but I'm also interested in web design, UI, concept development, content creation, and branding.</p>
+            I'm Panni, Copenhagen-based multimedia designer.<br>
+            I have studied and have experience in frontend development, UX and UI, graphic design, and concept development. I also have a passion for photography and visual branding.</p>
 
             <div class="image_container_me">
-                <img id="img_me" src="images/me3.png" alt="its_meeee_you_just_cant_seee">
+                <img id="img_me" src="images/me4.jpg" alt="its_meeee_you_just_cant_seee">
             </div>
         </section>
 
@@ -48,74 +48,37 @@
           <!--   <h1 id="projects_title">PROJECTS</h1> -->
 
             <div id="cards">
-                <div class="card" onclick="window.open('https://www.behance.net/gallery/147584917/event-flyers')">
+
+                <div class="card" onclick="openGraphicsPage()">
                     <div class="image_container">
-                        <img id="img1" src="images/posters.jpg" alt="img1">
+                        <img id="img3" src="images/posters.jpg" alt="img3">
                     </div>
                     <div class="assignment_text">
-                        <h3>POSTERS</h3>
-                        <p>Social media banners for clubs in Copenhagen, where I worked as graphic designer from 2021-2022</p>
+                        <h3>GRAPHIC DESIGN</h3>
+                        <p></p>
                     </div>
                 </div>
 
-                <div class="card" onclick="window.open('https://themotelmellow.com/primetime/')">
+                <div class="card" onclick="openUXUIPage()">
                     <div class="image_container">
-                        <img id="img4" src="images/game.png" alt="img4">
+                        <img id="img2" src="images/game.png" alt="img2">
                     </div>
                     <div class="assignment_text">
-                        <h3>PRIME TIME</h3>
-                        <p>My solution for a game we had to make as introduction to Javascript in the first semester of Multimedia Design</p>
+                        <h3>UX / UI DESIGN</h3>
+                        <p></p>
                     </div>
                 </div>
 
-                <div class="card" onclick="window.open('https://youtu.be/0ZWOW6ABgC4')">
+                <div class="card" onclick="openPhotographyPage()">
                     <div class="image_container">
-                        <img id="img7" src="images/video.png" alt="img7">
+                        <img id="img4" src="images/photos.jpg" alt="img4">
                     </div>
                     <div class="assignment_text">
-                        <h3>REBOUND</h3>
-                        <p>A short video challenge that tells a story in one minute. Directed, shot, edited by, and starring me</p>
+                        <h3>PHOTOGRAPHY</h3>
+                        <p></p>
                     </div>
                 </div>
 
-                <div class="card" onclick="window.open('https://themotelmellow.com/murdermystery/')">
-                    <div class="image_container">
-                        <img id="img2" src="images/murder.png" alt="img2">
-                    </div>
-                    <div class="assignment_text">
-                        <h3>MURDER MYSTERY</h3>
-                        <p>A choose-your-own-adventure game I made to explore more advanced Javascript functions</p>
-                    </div>
-                </div>
-
-                <div class="card" onclick="window.open('https://themotelmellow.com/hackedhogwarts/')">
-                    <div class="image_container">
-                        <img id="img3" src="images/hogwarts.png" alt="img3">
-                    </div>
-                    <div class="assignment_text">
-                        <h3>HOGWARTS</h3>
-                        <p>A Hogwarts administration page including a secret hack function. Looks weren't of most importance</p>
-                    </div>
-                </div>
-
-<!--                 <div class="card" onclick="window.open('page1.html')">
-                    <div class="image_container">
-                        <img id="img5" src="images/vlp.png" alt="img5">
-                    </div>
-                    <div class="assignment_text">
-                        <h3>ART GALLERY</h3>
-                    </div>
-                </div> -->
-<!-- 
-                <div class="card" onclick="window.open('page1.html')">
-                    <div class="image_container">
-                        <img id="img6" src="images/photos.jpg" alt="img6">
-                    </div>
-                    <div class="assignment_text">
-                        <h3>SOME PHOTOGRAPHY</h3>
-                        <p>This is what I love to do besides studies and work, just for fun (for now).</p>
-                    </div>
-                </div> -->
             </div>
         </section>
 
@@ -145,4 +108,15 @@
 
 
 <script type="module" src="script.js"></script>
+<script>
+    function openGraphicsPage() {
+        window.location.href = 'graphics.html';
+    }
+    function openUXUIPage() {
+        window.location.href = 'uxui.html';
+    }
+    function openPhotographyPage() {
+        window.location.href = 'photography.html';
+    }
+</script>
 </html>

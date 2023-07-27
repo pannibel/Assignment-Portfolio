@@ -23,7 +23,7 @@ window.onscroll = function() {
                 mainTitle.textContent = "HIRE ME PLS";
             };
             if (document.documentElement.scrollTop < 380) {
-                mainTitle.textContent = "PANNIBEL";
+                mainTitle.textContent = "PANNI BELEVSKI";
             };
     }
 
@@ -40,7 +40,7 @@ window.onscroll = function() {
             mainTitle.textContent = "CONTACT";
         };
         if (document.documentElement.scrollTop < 360) {
-            mainTitle.textContent = "PANNIBEL";
+            mainTitle.textContent = "PANNI BELEVSKI";
         };
 }
 
@@ -56,7 +56,7 @@ window.onscroll = function() {
             mainTitle.textContent = "CONTACT";
         };
         if (document.documentElement.scrollTop < 360) {
-            mainTitle.textContent = "PANNIBEL";
+            mainTitle.textContent = "PANNI BELEVSKI";
         };
 }
 
@@ -72,7 +72,7 @@ window.onscroll = function() {
             mainTitle.textContent = "CONTACT";
         };
         if (document.documentElement.scrollTop < 300) {
-            mainTitle.textContent = "PANNIBEL";
+            mainTitle.textContent = "PANNI BELEVSKI";
         };
 }
 
@@ -88,7 +88,7 @@ window.onscroll = function() {
             mainTitle.textContent = "CONTACT";
         };
         if (document.documentElement.scrollTop < 300) {
-            mainTitle.textContent = "PANNIBEL";
+            mainTitle.textContent = "PANNI BELEVSKI";
         };
 }
 
@@ -104,7 +104,7 @@ window.onscroll = function() {
             mainTitle.textContent = "CONTACT";
         };
         if (document.documentElement.scrollTop < 300) {
-            mainTitle.textContent = "PANNIBEL";
+            mainTitle.textContent = "PANNI BELEVSKI";
         };
 }
 
@@ -113,14 +113,14 @@ window.onscroll = function() {
         if (document.documentElement.scrollTop > 400) {
             mainTitle.textContent = "ABOUT ME";
         };
-        if (document.documentElement.scrollTop > 1250) {
+        if (document.documentElement.scrollTop > 1300) {
             mainTitle.textContent = "PROJECTS";
         };
-        if (document.documentElement.scrollTop > 1750) {
+        if (document.documentElement.scrollTop > 1850) {
             mainTitle.textContent = "CONTACT";
         };
         if (document.documentElement.scrollTop < 400) {
-            mainTitle.textContent = "PANNIBEL";
+            mainTitle.textContent = "PANNI BELEVSKI";
         };
 }
 
@@ -129,14 +129,14 @@ window.onscroll = function() {
         if (document.documentElement.scrollTop > 400) {
             mainTitle.textContent = "ABOUT ME";
         };
-        if (document.documentElement.scrollTop > 1100) {
+        if (document.documentElement.scrollTop > 1070) {
             mainTitle.textContent = "PROJECTS";
         };
-        if (document.documentElement.scrollTop > 1600) {
+        if (document.documentElement.scrollTop > 1700) {
             mainTitle.textContent = "CONTACT";
         };
         if (document.documentElement.scrollTop < 400) {
-            mainTitle.textContent = "PANNIBEL";
+            mainTitle.textContent = "PANNI BELEVSKI";
         };
 }
 
@@ -144,14 +144,14 @@ window.onscroll = function() {
         if (document.documentElement.scrollTop > 400) {
             mainTitle.textContent = "ABOUT ME";
         };
-        if (document.documentElement.scrollTop > 1300) {
+        if (document.documentElement.scrollTop > 1450) {
             mainTitle.textContent = "PROJECTS";
         };
-        if (document.documentElement.scrollTop > 1900) {
+        if (document.documentElement.scrollTop > 1950) {
             mainTitle.textContent = "CONTACT";
         };
         if (document.documentElement.scrollTop < 400) {
-            mainTitle.textContent = "PANNIBEL";
+            mainTitle.textContent = "PANNI BELEVSKI";
         };
 }
 
@@ -162,11 +162,11 @@ window.onscroll = function() {
         if (document.documentElement.scrollTop > 1500) {
             mainTitle.textContent = "PROJECTS";
         };
-        if (document.documentElement.scrollTop > 2200) {
+        if (document.documentElement.scrollTop > 2300) {
             mainTitle.textContent = "CONTACT";
         };
         if (document.documentElement.scrollTop < 400) {
-            mainTitle.textContent = "PANNIBEL";
+            mainTitle.textContent = "PANNI BELEVSKI";
         };
 }
 
@@ -181,7 +181,7 @@ window.onscroll = function() {
             mainTitle.textContent = "CONTACT";
         };
         if (document.documentElement.scrollTop < 400) {
-            mainTitle.textContent = "PANNIBEL";
+            mainTitle.textContent = "PANNI BELEVSKI";
         };
 }
 }
